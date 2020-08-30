@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static '/ISWorkshop/profile.css' %}">
+    <title>CAPES Portal</title>
+
+</head>
+
+<body>
+  <main>
+  <!-- Nav bar -->    
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dbbd0e;" >
+    <a class="navbar-brand" href="#">
+      <img src="https://upcapes.org/wp-content/themes/upcapes/images/CAPESLogo-small.png" width="30" height="30" class="d-inline-block align-top" alt="">&nbsp&nbsp&nbsp CAPES Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Profile</a>
+        <a class="nav-item nav-link" href="#">Companies</a>
+        <a class="nav-item nav-link" href="#">Opportunities</a>
+      </div>
+      <div class ="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Settings
+          </a>
+          
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Security</a>
+            <a class="dropdown-item" href="#">Privacy</a>
+            <a class="dropdown-item" href="#">Accessibilty</a>
+          </div>
+        </li>
+        <button class="btn btn-sm btn-outline-secondary " type="button">Log Out</button>
+      </div>
+    
+  </nav>
+
+  <!--background-->
+  <img src="https://walldiskpaper.com/wp-content/uploads/2014/11/White-Wallpaper-Pattern-HD.jpg" width="100%" height="100%" style="opacity:0.95"  class="d-inline-block align-top" alt="">
+
+  <!--center elements-->
+  <div style = "position:absolute; left:345px; top:100px;";>
+    
+    <a href="#"><img class="clip-circle"src="https://st.depositphotos.com/1224365/2498/i/450/depositphotos_24980235-stock-photo-portrait-of-a-normal-man.jpg" ></a>
+    <br>
+    <br>
+    <a id="name">John Smith • <a id="studentnumber">2016-00859</a></a>
+    <br>
+    <a id="course">BS Mechanical Engineering</a>
+    <br>
+    <a id="course"><img src="https://library.kissclipart.com/20180926/ptw/kissclipart-flight-take-off-icon-clipart-airplane-aircraft-tak-1d910865a8701850.png" width="28" height="30" class="d-inline-block align-top" alt="">
+      489 Points</a>
+      <br>
+
+      <button type="button" class="btn btn-outline-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Email • johnsmith@gmail.com <br /> Graduation Year • First Semester (2020) <br /> Location • Makati City, Philippines" data-html="true">
+      <img src="https://cdn.onlinewebfonts.com/svg/img_183643.png" width="35" height="25" class="d-inline-block align-top" alt="">
+      </button>
+
+      <button type="button"  class="btn btn-outline-secondary"  data-container="body" data-toggle="popover" data-placement="right" data-content="Date Joined • 01-01-20 21:21 <br /> &nbsp&nbsp Last Login • 04-14-20 18:43" data-html="true">
+      <img src="https://img.pngio.com/internet-svg-png-icon-free-download-190618-onlinewebfontscom-icon-internet-png-980_980.png" width="25" height="25" class="d-inline-block align-top" alt="">
+      </button>
+      <br><br>
+      <button class="btn btn-sm btn-outline-secondary " type="button"><a href="{% url 'forms' %}" >Edit Profile</a></button>
+      <br><br><br><br><br><br>
+    
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>
+
+    </main>
+    </body>
+    
+</html>

@@ -1,0 +1,75 @@
+/*CSS Universal Selector*/
+* {
+    text-align: center;
+    list-style-position: inside;
+    color: rgb(0, 0, 0);
+}
+/*CSS Class Selector*/
+.image-test {
+    /*IMAGE*/
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-radius: 0%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 3px #333;
+}
+
+.clip-circle {
+    clip-path: circle(200px at center);
+}
+
+/*CSS ID Selector*/
+#title {
+    /*FONT*/
+    font-size: 40px;
+    font-family: sans-serif;
+    opacity: 90%;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#name {
+    /*FONT*/
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 100%;
+    font-weight: 600;
+}
+
+#namedetails {
+    /*FONT*/
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 100%;
+    font-weight: 450;
+}
+
+#studentdetails {
+    /*FONT*/
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 100%;
+    color: rgb(111, 111, 129);
+    font-style: italic;
+}
+
+#studentnumber {
+    /*FONT*/
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 100%;
+    color: rgb(111, 111, 129);
+    font-style: normal;
+}
+
+#course {
+    /*FONT*/
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 100%;
+    color: rgb(111, 111, 129);
+    font-style: normal;
+}
+

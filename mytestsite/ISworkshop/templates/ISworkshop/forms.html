@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static '/ISWorkshop/profile.css' %}">
+    <title>CAPES Portal</title>
+
+</head>
+
+<body>
+  <main>
+   <!--Nav bar-->   
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dbbd0e;" >
+    <a class="navbar-brand" href="#">
+      <img src="https://upcapes.org/wp-content/themes/upcapes/images/CAPESLogo-small.png" width="30" height="30" class="d-inline-block align-top" alt="">&nbsp&nbsp&nbsp CAPES Portal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#">Profile</a>
+        <a class="nav-item nav-link" href="#">Companies</a>
+        <a class="nav-item nav-link" href="#">Opportunities</a>
+      </div>
+      <div class ="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Settings
+          </a>
+          
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Security</a>
+            <a class="dropdown-item" href="#">Privacy</a>
+            <a class="dropdown-item" href="#">Accessibilty</a>
+          </div>
+        </li>
+        <button class="btn btn-sm btn-outline-secondary " type="button">Log Out</button>
+      </div>
+    
+  </nav>
+  <!--Background image-->
+  <img src="https://walldiskpaper.com/wp-content/uploads/2014/11/White-Wallpaper-Pattern-HD.jpg" width="100%" height="100%" style="opacity:0.95"  class="d-inline-block align-top" alt="">
+ 
+<!--center elements-->  
+<div style = "position:absolute; left:345px; top:100px;";>
+    <h1 id="title">Profile Page</h1>
+  <br>
+
+  <form action="/action_page.php" id="survey-form">
+
+    <!--student #-->
+    <label for="studentn">Student Number :&nbsp</label>
+    <input type="text" id="studentn" name="studentn" ><br><br>
+
+    <!--first name-->
+    <label for="fname"><span style="margin-left:2.55em">First Name :&nbsp</label>
+    <input type="text" id="fname" name="fname" ><br><br>
+
+    <!--last name-->
+    <label for="lname"><span style="margin-left:2.7em">Last Name :&nbsp</label>
+    <input type="text" id="lname" name="lname" ><br><br>
+
+    <!--degree-->
+    <label for="degree"><span style="margin-left:3em">Degree Program :&nbsp</label>
+        <select name="degree" id="degree">
+            <option value="null"></option>
+            <option value="BS Computer Science">BS Computer Science</option>
+            <option value="BS Civil Engineering">BS Civil Engineering</option>
+            <option value="BS Chemical Engineering">BS Chemical Engineering</option>
+            <option value="BS Computer Engineering">BS Computer Engineering</option>
+            <option value="BS Electronics and Communications Engineering">BS ECE</option>
+            <option value="BS Electrical Engineering">BS Electrical Engineering</option>
+            <option value="BS Geodetic Engineering">BS Geodetic Engineering</option>
+            <option value="BS Industrial Engineering">BS Industrial Engineering</option>
+            <option value="BS Mechanical Engineering">BS Mechanical Engineering</option>
+            <option value="BS Materials Engineering">BS Materials Engineering</option>
+            <option value="BS Metallurgical Engineering">"BS Metallurgical Engineering</option>
+            <option value="BS Mining Engineering">BS Mining Engineering</option>
+        </select><br><br>
+
+    <!--graduation year-->
+    <label for="gradyear"><span style="margin-left:1em">Graduation Year :&nbsp</label>
+    <select name="gradyear" id="gradyear">
+        <option value="null"></option>
+        <option value="AY 2020-2021 (1st Sem)">AY 2020-2021 (1st Sem)</option>
+        <option value="AY 2020-2021 (2nd Sem)">AY 2020-2021 (2nd Sem)</option>
+        <option value="AY 2021-2022 (1st Sem)">AY 2021-2022 (1st Sem)</option>
+        <option value="AY 2021-2022 (2nd Sem)">AY 2021-2022 (2nd Sem)</option>
+        <option value="AY 2022-2023 (1st Sem)">AY 2022-2023 (1st Sem)</option>
+        <option value="AY 2022-2023 (2nd Sem)">AY 2022-2023 (2nd Sem)</option>
+        <option value="AY 2023-2024 (1st Sem)">AY 2023-2024 (1st Sem)</option>
+        <option value="AY 2023-2024 (2nd Sem)">AY 2023-2024 (2nd Sem)</option>
+        <option value="AY 2024-2025 (1st Sem)">AY 2024-2025 (1st Sem)</option>
+        <option value="AY 2024-2025 (2nd Sem)">AY 2024-2025 (2nd Sem)</option>
+    </select><br><br>
+
+
+    <!--date joined-->
+    <label for="datejoined"><span style="margin-left:5.8em">Date Joined :&nbsp </label>
+    <input type="datetime-local" id="datejoined" name="datejoined"><br><br>
+
+    <!--last login-->
+    <label for="lastlogin"><span style="margin-left:6.5em">Last Login :&nbsp </label>
+    <input type="datetime-local" id="lastlogin" name="lastlogin"><br><br>
+
+    <!--city-->
+    <label for="city"><span style="margin-left:5.8em">City :&nbsp</label>
+    <input type="text" id="city" name="city" ><br><br>
+
+    <!--capes miles-->
+    <label for="cmiles"><span style="margin-left:-0.8em">CAPES Miles Points :&nbsp</label>
+    <input type="text" id="cmiles" name="cmiles" ><br><br>
+
+    <!--profile picture-->
+    <a><span style="margin-left:8em"></span> Profile Picture :&nbsp</a>
+    <input type="file" id="dp" name="dp"><br><br><br>
+    <!--<input type="submit" name="submit" value="Upload Image"><br><br>-->
+
+    <!--submit-->
+    <input type="submit" value="Submit">
+   
+  
+  </form> 
+    </div> 
+
+ 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>
+
+</main>
+</body>
+</html>
